@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
     name: 'gpt',
-    author: 'joshua Apostol',//Credit to the Api owner Rui
+    author: '𝗠𝗲𝘁𝗼𝘂𝘀𝗵𝗲𝗹𝗮',//Credit to the Api owner Rui
     description: 'Query GPT-4o for a response.',
     nashPrefix: true,
     execute: async (api, event, args) => {

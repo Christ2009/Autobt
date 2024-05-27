@@ -23,7 +23,7 @@ module.exports = {
 
     switch (true) {
       case args.length === 0:
-        let helpMessage = `📍 | 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 (Page 1/${Math.ceil(
+        let helpMessage = `🖥 | 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n━━━━━━━━━━\n🌱.Metoushela walker.☘️\n (Page 1/${Math.ceil(
           commandFiles.length / commandsPerPage,
         )}):\n`;
 
@@ -31,7 +31,7 @@ module.exports = {
           const commandName = path.basename(file, ".js");
           const command = require(`./${commandName}`);
           const { name, description } = command.config;
-          helpMessage += `➤ 【 ${name || " No Name"} 】- ${
+          helpMessage += `🎯 .♣ ${name || " No Name"} - ${
             description || "No description"
           }\n`;
         });
@@ -54,7 +54,7 @@ module.exports = {
           return;
         }
 
-        let pageMessage = `📍 | 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 (Page ${pageNumber}/${Math.ceil(
+        let pageMessage = `🌐 | 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n━━━━━━━━━━\n🏅Metoushela walker🏅\n\n (Page ${pageNumber}/${Math.ceil(
           commandFiles.length / commandsPerPage,
         )}):\n`;
 
@@ -62,7 +62,7 @@ module.exports = {
           const commandName = path.basename(file, ".js");
           const command = require(`./${commandName}`);
           const { name, description } = command.config;
-          pageMessage += `➤ 【 ${name || " No Name"} 】- ${
+          pageMessage += `🎯 .🥇 ${name || " No Name"} .- ${
             description || "No description"
           }\n`;
         });
@@ -80,7 +80,7 @@ module.exports = {
           const command = require(`./${path.basename(commandFile, ".js")}`);
           const { name, description, usage, author, version } = command.config;
           sendMessage(
-            `➤【 ${name || "Guide:"} 】
+            `🏅🏅 ${name || "Guide:"} 
 📝 Created by: ${author || "Anonymous"}
 💻 Version: ${version || "1.0"}
 🔎 Description:
@@ -89,7 +89,7 @@ ${description || "Its a mystery"}
 ${usage || "Guess it"}`,
           );
         } else {
-          sendMessage(`Command or page not found: ${args.join(" ")}`);
+          sendMessage(`𝗖𝗼𝗺𝗺𝗮𝗻𝗱🎯 or 𝗽𝗮𝗴𝗲♣ not 𝗳𝗼𝘂𝗻𝗱📷: ${args.join(" ")}`);
         }
         break;
     }

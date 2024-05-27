@@ -11,20 +11,20 @@ module.exports = {
 
         if (!input) {
             api.sendMessage(
-                `Hello there!\n\nI am an AI developed by joshua Apostol. I am here to assist you with any questions or tasks you may have.\n\nUsage: ai [your question]`,
+                `💬 𝗔𝗡𝗢𝗧𝗛𝗘𝗥-𝗠𝗘.🎮\n━━━━━━━━━\n\n𝚌𝚘𝚖𝚖𝚎ｎｔ ｐ𝚞𝚒-ｊ𝚎 ｔ'𝚊𝚒ｄ𝚎ｒ 𝚊𝚞ｊ𝚘𝚞ｒｄｈ'𝚞𝚒?🌐`,
                 event.threadID,
                 event.messageID
             );
             return;
         }
 
-        api.sendMessage(`Processing your request...`, event.threadID, event.messageID);
+        api.sendMessage(`☘️.𝘃𝗼𝘁𝗿𝗲 𝗱𝗲𝗺𝗮𝗻𝗱𝗲 𝗲𝘀𝘁 𝗲𝗻 𝗰𝗼𝘂𝗿𝘀...🎲`, event.threadID, event.messageID);
 
         try {
             const { data } = await axios.get(`https://api.easy-api.online/v1/globalgpt?q=${encodeURIComponent(input)}`);
             const response = data.content;
 
-            const finalResponse = `✩𝕄𝕖𝕥𝕠𝕦𝕤𝕙𝕖𝕝𝕒✩\n\n${response}\n\n\n`;
+            const finalResponse = `💬 𝗔𝗡𝗢𝗧𝗛𝗘𝗥-𝗠𝗘\n━━━━━━━━━━\n\n${response}\n\n━━━━━━━━━━\n`;
             api.sendMessage(finalResponse, event.threadID, event.messageID);
         } catch (error) {
             api.sendMessage('An error occurred while processing your request, please try sending your question again', event.threadID, event.messageID);

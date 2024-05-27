@@ -11,7 +11,7 @@ module.exports = {
 
         if (!input) {
             api.sendMessage(
-                `💬 𝗔𝗡𝗢𝗧𝗛𝗘𝗥-𝗠𝗘.🎮\n━━━━━━━━━\n\n𝚌𝚘𝚖𝚖𝚎ｎｔ ｐ𝚞𝚒-ｊ𝚎 ｔ'𝚊𝚒ｄ𝚎ｒ 𝚊𝚞ｊ𝚘𝚞ｒｄｈ'𝚞𝚒?🌐`,
+                `💬 𝗔𝗡𝗢𝗧𝗛𝗘𝗥-𝗠𝗘.🎮\n━━━━━━━━━\n\nsalut moi c'est mark l'assistant virtuel de metoushela walker\nJe dispose de 8cmd au total\n faite info pour voir toutes mes cmd..🎯`,
                 event.threadID,
                 event.messageID
             );
